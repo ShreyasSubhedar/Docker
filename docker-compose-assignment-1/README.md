@@ -4,7 +4,7 @@
 
 Ans: -
 - This directory is where you should create a docker-compose.yml 
-- Use the `drupal:8.8.2` image along with the `postgres:12.1` image
+- Use the `drupal:latest` image along with the `postgres:latest` image
 - Set the version to 2 (or grater than 2 if you are interested in new features)
 - Use `ports` to expose Drupal on 80
 - Be sure to setup POSTGRES_PASSWORD on postgres image (using -environment)
