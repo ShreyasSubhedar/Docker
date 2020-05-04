@@ -30,3 +30,8 @@ Goal: Imagine you're just wanting to learn Drupal's admin and GUI, or maybe you'
 
 ## Extra Credit
 - Add one content and see the how drupal works 
+
+
+<p align="center">
+  <img src="https://github.com/ShreyasSubhedar/Docker/blob/master/docker-compose-assignment-3/Screenshot_20200504-124553.png" width="350" title="Mobile View of CMS">
+</p>
