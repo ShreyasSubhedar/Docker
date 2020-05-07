@@ -25,9 +25,12 @@ For `Nextcloud`
 - Add one content and see the how nextcloud works 
 - Use `WebDAV` or `SabreDAV` with `curl` to add the file && create folders using Nextcloud API. 
 
+### WebDAV
+- `(base) xo@Ideapad-500:~$ curl -X PUT -u 406268:Shreyas@12345 --data-binary @"text.txt" "http://172.24.0.3/remote.php/dav/files/406268/DS_LAB_ASSIGNMENTS/text.txt"</small>`
 <p align="center">
-  <img src="https://github.com/ShreyasSubhedar/Docker/blob/master/docker-compose-assignment-4/Screenshot-from-2020-05-05-21-10-26.png" width="350" title="Nextcloud Configuration">
-</p>
+  <img src="https://github.com/ShreyasSubhedar/Docker/blob/master/docker-compose-assignment-4/Screenshot%20from%202020-05-05%2021-10-26.png"  title="Nextcloud Configuration"> 
+  </p>
+&nbsp;
 <p align="center">
-  <img src="https://github.com/ShreyasSubhedar/Docker/blob/master/docker-compose-assignment-4/Screenshot-from-2020-05-07-15-27-57.png" width="350" title="Nextcloud Configuration">
+  <img src="https://github.com/ShreyasSubhedar/Docker/blob/master/docker-compose-assignment-4/Screenshot%20from%202020-05-07%2015-27-57.png" title="Nextcloud Container Details">
 </p>
