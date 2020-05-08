@@ -13,7 +13,7 @@ Goal: Imagine you're just wanting to learn Nextcloud integration with mysql data
 `- MYSQL_USER=nextcloud`
 - Named volume `db`.
 For `Nextcloud`
-- Link MariaDB's named volume with `nextcloud:latest` image and add the `app (i.e serrvice name of nextcloud)` into `nextcloud` named volume.
+- Link MariaDB's named volume with `nextcloud:latest` image and add the `app (i.e service name of nextcloud)` into `nextcloud` named volume.
 
 - For the `mariadb:latest` service, set password = `<your password>`.
 ## Start Containers, Configure Drupal
@@ -26,7 +26,7 @@ For `Nextcloud`
 - Use `WebDAV` or `SabreDAV` with `curl` to add the file && create folders using Nextcloud API. 
 
 ### WebDAV
-- `(base) xo@Ideapad-500:~$ curl -X PUT -u 406268:Shreyas@12345 --data-binary @"text.txt" "http://172.24.0.3/remote.php/dav/files/406268/DS_LAB_ASSIGNMENTS/text.txt"</small>`
+- `(base) xo@Ideapad-500:~$ curl -X PUT -u 406268:Shreyas@12345 --data-binary @"text.txt" "http://172.24.0.3/remote.php/dav/files/406268/DS_LAB_ASSIGNMENTS/text.txt"
 <p align="center">
   <img src="https://github.com/ShreyasSubhedar/Docker/blob/master/docker-compose-assignment-4/Screenshot%20from%202020-05-05%2021-10-26.png"  title="Nextcloud Configuration"> 
   </p>
