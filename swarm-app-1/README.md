@@ -44,3 +44,11 @@ Here is a basic diagram of how the 5 services will work:
     - so run on a high port of your choosing (I choose 5001), container listens on 80
     - on backend network
     - 1 replica
+## Final Result
+  <p align="center">
+  <img src="https://github.com/ShreyasSubhedar/Docker/blob/docker_swarm/swarm-app-1/Screenshot%20from%202020-05-08%2023-49-01.png"  title="Nextcloud Configuration"> 
+  </p>
+  
+    <p align="center">
+  <img src="  https://github.com/ShreyasSubhedar/Docker/blob/docker_swarm/swarm-app-1/Screenshot%20from%202020-05-08%2023-49-05.png"  title="Nextcloud Configuration"> 
+  </p>
