@@ -21,3 +21,6 @@
 | Hard to troubleshoot | Easy to troubleshoot |
 | Default security is less | More secure by default |
 | More efficient and more facility | Less efficient and less facility |
+
+## Kubernetes Components Overview
+<img src="https://github.com/ShreyasSubhedar/Docker/blob/master/kubernetes%20intorduction/Screenshot%20from%202020-05-17%2012-39-18.png" >
