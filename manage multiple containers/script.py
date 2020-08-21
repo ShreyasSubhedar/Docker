@@ -19,5 +19,8 @@ client.containers.run("nginx",ports=port_mapping,detach=True)
 port_mapping ={
     '3306/tcp':3306
 }
-client.containers.run("mysql",ports=port_mapping,detach=True)
+env_var={
+    "MYSQL_RANDOM_PASSWORD":True
+}
+client.containers.run("mysql",ports=port_mapping,enviroment=env_var,detach=True)
 print(client.containers.list())
