@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    name: frontend
+spec:
+  containers:
+  - name: myapp-container
+    image: simple-webap-color
+    ports:
+        - containerPort: 8080
+    env:
+        - name: APP_COLOR
+          value: Blue
