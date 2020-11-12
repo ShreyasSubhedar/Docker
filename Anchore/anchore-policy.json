@@ -1,0 +1,53 @@
+{
+    "id": "testPolicy",
+    "version": "1_0",
+    "name": "Test Policy bundle",
+    "comment": "Fail on medium, exclude unwanted CVE issues",
+    "whitelisted_images": [],
+    "blacklisted_images": [],
+    "mappings": [
+      {
+        "name": "default", 
+        "registry": "*",
+        "repository": "*",
+        "image": { "type": "tag", "value": "*" },
+        "policy_ids": [ "policy1" ],
+        "whitelist_ids": [ "whitelist1" ]
+      }
+    ],
+    "whitelists": [
+      {
+        "id": "whitelist1",
+        "name": "Whitelist trigger id",
+        "version": "1_0",
+        "items": [
+          { "id": "item1", "gate": "vulnerabilities", "trigger": "package", "trigger_id": "CVE-2020-26935" },
+          { "id": "item2", "gate": "vulnerabilities", "trigger": "package", "trigger_id": "CVE-xyz-xyz" },
+          { "id": "item2", "gate": "vulnerabilities", "trigger": "package", "trigger_id": "CVE-xyz-xyz" },
+          { "id": "item2", "gate": "vulnerabilities", "trigger": "package", "trigger_id": "CVE-xyz-xyz" },
+          { "id": "item2", "gate": "vulnerabilities", "trigger": "package", "trigger_id": "CVE-xyz-xyz" }
+        ]
+      }
+    ],
+    "policies": [
+      {
+        "name": "DefaultPolicy",
+        "version": "1_0",
+        "comment": "Policy for medium severity checks",
+        "id": "policy1",
+        "rules": [
+          {
+            "action": "WARN",
+            "gate": "vulnerabilities",
+            "trigger": "package",
+            "id": "rule1",
+            "params": [
+              { "name": "package_type", "value": "all" },
+              { "name": "severity_comparison", "value": ">=" },
+              { "name": "severity", "value": "medium" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
