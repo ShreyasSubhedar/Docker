@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: myapp-container
-          image: nginx
+          image: nginx:1.18-asdas
   replicas: 5
   selector:
     matchLabels:
